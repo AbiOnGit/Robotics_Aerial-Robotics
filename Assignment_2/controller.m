@@ -20,14 +20,14 @@ function [ u1, u2 ] = controller(~, state, des_state, params)
 % FILL IN YOUR CODE HERE
 
 % Proportional and Derivative Gains
-Kp_z = 80;
-Kd_z = 20;
+Kp_z = ;
+Kd_z = ;
 
-Kp_y = 20;
-Kd_y = 5;
+Kp_y = ;
+Kd_y = ;
 
-Kp_a = 1000;
-Kd_a = 10;
+Kp_a = ;
+Kd_a = ;
 
 u1 = params.mass*(params.gravity + des_state.acc(2,1) + Kd_z*(des_state.vel(2,1)-state.vel(2,1)) + Kp_z*(des_state.pos(2,1)-state.pos(2,1)));
 
